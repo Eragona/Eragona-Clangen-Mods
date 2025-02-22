@@ -27,13 +27,6 @@ class Pelt:
         "Agouti": "agouti",
         "Singlestripe": "singlestripe",
         "Masked": "masked",
-        "Brindle": "brindle",
-        "Wolf": 'wolf',
-        "Wildcat": "wildcat",
-        "Spots": "spots",
-        "Smokepoint": "smokepoint",
-        "Lynx": "lynx",
-        "Finleappatches": "finleappatches",
         "Tortie": None,
         "Calico": None,
     }
@@ -143,20 +136,6 @@ class Pelt:
         "SHILOH",
         "FRECKLED",
         "HEARTBEAT",
-        'CHAOSONE', 'CHAOSTWO', 'CHAOSTHREE', 'CHAOSFOUR', 'ERROR', 'WAVE', 'PONINTTORITE', 'MASKTORITE', 'LITTLESTAR',
-        'TANBUNNY', 'STRIPES', 'PINITO',  'SKULL', 'SIGHT', 'BRINDLETORITE', 'SNOW', 'ROSETTESTORITE', 'AMBERONE',
-        'KINTSUGIONE', 'BENGALMASK', 'SHADOW', 'RAIN', 'MGLA', 'MOONLIGHT', 'MOUSE', 'SATURN', 'MARBLETORINE', 'AMBERTWO',
-        'PATTERN', 'MOSS',
-        'MONKEY', 'BUMBLEBEE', 'KINTSUGITWO', 'STORM', 'CLASSICTORNIE', 'STRIPEONETORITE', 'MACKERELTORITE',
-        'AMBERTHREE', 'SHADE', 'GRAFFITI', 'AGOUTITORIE', 'BENGALTORITE', 'TABBYTORITE', 'SOKKOKETORITE',
-        'SPECKLEDTORITE', 'TICKEDTORIE', 'MORRO',
-        'AMBERFOUR', 'DOG', 'ONESPOT', 'INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
-        'AKITA', 'CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
-        'HALFHEART','FRECKLESTHREE','KITTY', 'SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW',
-        'BOOMSTAR','MIST','LEON', 'LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO',
-        'CHAOS', 'MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY', 'MOONSTONE', 'DRIP',
-        'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY',
-        'SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK',
     ]
     tortiebases = [
         "single",
@@ -173,13 +152,6 @@ class Pelt:
         "agouti",
         "singlestripe",
         "masked",
-        'lynx', 
-        'wolf', 
-        'brindle', 
-        'spots', 
-        'smokepoint',
-        'finleappatches', 
-        'wildcat',
     ]
 
     pelt_length = ["short", "medium", "long"]
@@ -206,11 +178,6 @@ class Pelt:
         "BRONZE",
         "SILVER",
         "ORANGE",
-        'DARK HAZEL', 'ROSE GOLD', 'ROSE', 'REVERSE SUNLITICE', 'ICY', 'SUNSET',
-        'LAVENDER', 'ECLIPSE', 'BLACK',
-        'MUDDY', 'TURQUOISE', 'VIOLET', 'RUSTY', 'PASTEL', 'AVOCADO', 'PASTEL LAVENDER', 'ALBINO',
-        'WINTER ROSE', 'PINK', 'MORNING', 'DARK BROWN' , 'BAY', 'NEON GREEN', 'SEA', 'DISCORD', 
-        'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED'
     ]
     yellow_eyes = [
         "YELLOW",
@@ -222,9 +189,6 @@ class Pelt:
         "BRONZE",
         "SILVER",
         "ORANGE",
-        'MORNING',
-        'ROSE GOLD', 'ROSE', 'DARK BROWN', 'MUDDY', 'RUSTY', 'ECLIPSE', 'BAY', 'DISCORD', 
-        'AUTUMN LEAF'
     ]
     blue_eyes = [
         "BLUE",
@@ -235,12 +199,8 @@ class Pelt:
         "COBALT",
         "SUNLITICE",
         "GREY",
-        'REVERSE SUNLITICE', 'ICY',
-        'VIOLET', 'PASTEL', 'WINTER ROSE', 
-        'PASTEL LAVENDER', 'LAVENDER', 'PINK', 'RUBY', 'WICKED', 'PHANTOM',
-        "BLACK"
     ]
-    green_eyes = ["PALEGREEN", "GREEN", "EMERALD", "SAGE", "HAZEL", 'DARK HAZEL', 'TURQUOISE', 'AVOCADO', 'NEON GREEN', 'SEA', 'RIVER MOSS']
+    green_eyes = ["PALEGREEN", "GREEN", "EMERALD", "SAGE", "HAZEL"]
 
     # bite scars by @wood pank on discord
 
@@ -433,20 +393,6 @@ class Pelt:
         "PURPLENYLON",
         "MULTINYLON",
         "INDIGONYLON",
-        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA",
-        "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", 
-        "WHITEBANDANA","PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA",
-        "CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH", "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH", "PINKH",
-        "PURPLEH", "MULTIH", "INDIGOH", "CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", 
-        "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
-        "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", 
-        "INDIGOBOWS",
-        "CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE",
-        "GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE",
-        "PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE",
-        "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES",
-        "GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES",
-        "PINKS", "PURPLES", "MULTIS", "INDIGOS",
     ]
 
     head_accessories = [
@@ -496,10 +442,10 @@ class Pelt:
         "DRY HERBS"
     ]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti", "Brindle"]
-    spotted = ["Speckled", "Rosette", "Spots"]
-    plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe", "Smokepoint"]
-    exotic = ["Bengal", "Marbled", "Masked", "Lynx", "Wildcat", "Wolf", "Finleappatches"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
+    spotted = ["Speckled", "Rosette"]
+    plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
+    exotic = ["Bengal", "Marbled", "Masked"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -562,12 +508,7 @@ class Pelt:
         "BRONZE",
         "SILVER",
         "ORANGE",
-        'DARK HAZEL', 'ROSE GOLD', 'ROSE', 'REVERSE SUNLITICE', 'ICY',
-        'SUNSET', 'DARKBLUE', 'LAVENDER', 'ECLIPSE', 'BLACK', 
-        'MUDDY', 'TURQUOISE', 'VIOLET', 'RUSTY', 'PASTEL', 'AVOCADO',
-        'PASTEL LAVENDER', 'ALBINO', 'WINTER ROSE', 'PINK', 
-        'MORNING', 'DARK BROWN',' BAY', 'NEON GREEN', 'SEA', 'DISCORD',
-        'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED'
+    ]
     little_white = [
         "LITTLE",
         "LIGHTTUXEDO",
