@@ -1001,6 +1001,54 @@ class Cat:
         event_text_adjust(Cat, output, main_cat=self)
         return output
 
+    
+    def describe_eyes(self):
+        """Get a human-readable description of this cat's eye colour"""
+        colour = str(self.pelt.eye_colour).lower()
+        colour2 = str(self.pelt.eye_colour2).lower()
+
+        if colour == "palegreen":
+            colour = "pale green"
+        elif colour == "darkblue":
+            colour = "dark blue"
+        elif colour == "paleblue":
+            colour = "pale blue"
+        elif colour == "paleyellow":
+            colour = "pale yellow"
+        elif colour == "heatherblue":
+            colour = "heather blue"
+        elif colour == "blue2":
+            colour = "blue"
+        elif colour == "sunlitice":
+            colour = "sunlit ice"
+        elif colour == "greenyellow":
+            colour = "green-yellow"
+        elif colour == "violet2":
+            colour = "blackberry"
+        elif colour == "turquoise2":
+            colour = "dark turquoise"
+        elif colour == "rose2":
+            colour = "dark rose"
+        if self.pelt.eye_colour2:
+            if colour2 == "palegreen":
+                colour2 = "pale green"
+            if colour2 == "darkblue":
+                colour2 = "dark blue"
+            if colour2 == "paleblue":
+                colour2 = "pale blue"
+            if colour2 == "paleyellow":
+                colour2 = "pale yellow"
+            if colour2 == "heatherblue":
+                colour2 = "heather blue"
+            if colour2 == "sunlitice":
+                colour2 = "sunlit ice"
+            if colour2 == "greenyellow":
+                colour2 = "green-yellow"
+            colour = f"{colour} and {colour2}"
+        return colour
+    
+    
+    
     def convert_history(self, died_by, scar_events):
         """
         Handle old history save conversions
@@ -3375,6 +3423,8 @@ class Cat:
             ]
         )
 
+
+    
     def get_save_dict(self, faded=False):
         if faded:
             return {

@@ -708,9 +708,8 @@ class ProfileScreen(Screens):
         output += "\n"
 
         # EYE COLOR
-        output += i18n.t(
-            "screens.profile.eyes_label", eyes=the_cat.pelt.describe_eyes()
-        )
+        output += "eyes: " + str(the_cat.describe_eyes())
+        
         # NEWLINE ----------
         output += "\n"
 
